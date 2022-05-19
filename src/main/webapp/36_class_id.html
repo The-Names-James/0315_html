@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!--
+      class: 공백으로 구분하는 요소의 별명을 지정. 같은 속성 값을 가지는 class를 여러개 지정할 수 있음. getElementsByClassName, querySelectorAll
+      id: 문서에서 사용할 고유한 식별자를 정의. 같은 속성 값을 가지는 id는 딱 1개만 지정할 수 있음. getElementById, querySelector
+    -->
+    <div class="section"></div>
+    <div class="section"></div>
+    <div id="section"></div>
+
+    <script type="text/javascript">
+      const section1 = document.getElementsByClassName('section');
+      const section2 = document.querySelectorAll('.section');
+
+      const sectionId = document.getElementById('section');
+      const sectionId = document.querySelector('#section');
+    </script>
+
+    <h2 title="이 부분은 제목2입니다.">제목2</h2>
+    <a href="https://www.google.com" title="구글로 이동합니다.">구글로 ㄱㄱ</a>
+
+    <!--
+      data-*: 사용자 정의 데이터 속성을 지정. "*" 위치에는 무조건 소문자로 입력해야 한다.
+    -->
+    <div id="me" data-my-name="Hong">
+      My Info
+    </div>
+
+    <script type="text/javascript">
+      const me= document.getElementById('me');
+      console.log(me.innerText);
+      console.log(me.innerHTML);
+
+      console.log(me.dataset.myName)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+div{
+  background: red;
+  width: 200px;
+  height: 50px;
+  margin: 20px;
+  padding: 20px;
+}
+span{
+  background: yellowgreen;
+  width: 200px;
+  height: 50px;
+  margin: 20px;
+  padding: 20px;
+}

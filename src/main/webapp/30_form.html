@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!--
+      <form> 태그는 입력된 정보를 제출(전송)하기 위한 대화면 컨트롤을 포함하는 문서 구역을 만든다.
+      웹 서버에 정보를 제출하기 위한 양식의 범위를 정의한다.
+      <form>이 다른 <form>을 자식요소로 가질 수 없다. <form> 태그 안에 <form>이 포함되면 안된다.
+      action 속성은 submit 버튼이 클릭된 폼에 입력된 정보를 처리할 웹 페이지의 url을 적는다.
+      method 속성은 서버로 데이터를 전송하는 방식. get/post
+      name 속성은 컨트롤의 이름을 지정한다. name에 지정한 속성 값에 데이터가 저장돼서 action 페이지로 전송된다.
+    -->
+    <form action="?" method="get" name="loginForm"> <!-- "?"는 현재 페이지를 의미함-->
+      <input type="email" name="email"/>
+    </form>
+  </body>
+</html>

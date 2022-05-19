@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form action="?" method="post">
+      <!-- <input> 태그에 type="hidden" 속성을 사용하면 컨트롤이 화면에 표시되지 않는다. -->
+      이름: <input type="text" name="name"/><br>
+      아이디: <input type="hidden" name="id"/>
+    </form>
+
+    <form action="?" method="post" hidden>
+      이름: <input type="text" name="name"/><br>
+      아이디: <input type="hidden" name="id"/>
+    </form>
+    
+    <!--드래그 안됨-->
+    <div draggable="true">
+      드래그 안될 듯
+    </div>
+
+    <!-- tabindex 속성은 Tab 키를 이용해 순차적으로 포커스를 이동시키는 순서를 지정한다. -->
+    <input type="text" value="1" tabindex="1">
+    <input type="text" value="2" tabindex="2">
+    <input type="text" value="3" tabindex="3">
+    <input type="text" value="4" tabindex="4">
+    <input type="text" value="5" tabindex="5">
+  </body>
+</html>

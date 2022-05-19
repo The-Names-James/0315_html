@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!--
+    <canvas> 태그는 js를 이용해 그래픽을 표시한다.
+    width
+    height
+
+   -->
+
+   <canvas id="canvas" width="300" height="300"></canvas>
+   <script>
+     const canvas = document.getElementById('canvas');
+     const ctx = canvas.getContext('2d');
+     ctx.fillStyle= 'rgb(200,0,0)';
+     ctx.fillRect(10, 10, 500, 500);
+     //10,10 위치에서 500, 500짜리인 사각형을 그린다.
+     //(r,g,b,alpha) alpha는 투명도
+   </script>
+  </body>
+</html>
